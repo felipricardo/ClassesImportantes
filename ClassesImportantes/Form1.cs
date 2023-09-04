@@ -33,7 +33,16 @@ namespace ClassesImportantes
             //        lblResultado.Text = "Clicou em Cancelar";
             //    }
 
-            MessageBox.Show("Mensagem", "Titulo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            MessageBox.Show("Mensagem", "Titulo", MessageBoxButtons.YesNo, MessageBoxIcon.Information, MessageBoxDefaultButton.Button2);
+        }
+
+        private void btnAleatorio_Click(object sender, EventArgs e)
+        {
+            Random r = new Random();
+
+            int valor = r.Next(100);
+
+            lblResultado.Text = "Numero : " + valor;
         }
     }
 }
