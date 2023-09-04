@@ -40,7 +40,7 @@ namespace ClassesImportantes
         {
             Random r = new Random(DateTime.Now.Millisecond);
 
-            int valor = r.Next(20,50);
+            int valor = r.Next(100);
 
             lblResultado.Text = "Numero : " + valor;
         }
