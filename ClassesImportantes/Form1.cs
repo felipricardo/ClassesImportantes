@@ -41,6 +41,7 @@ namespace ClassesImportantes
             Random r = new Random(DateTime.Now.Millisecond);
 
             int valor = r.Next(100);
+            double valor2 = r.NextDouble();
 
             lblResultado.Text = "Numero : " + valor;
         }
