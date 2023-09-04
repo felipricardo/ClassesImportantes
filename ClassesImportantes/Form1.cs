@@ -38,9 +38,9 @@ namespace ClassesImportantes
 
         private void btnAleatorio_Click(object sender, EventArgs e)
         {
-            Random r = new Random();
+            Random r = new Random(DateTime.Now.Millisecond);
 
-            int valor = r.Next(100);
+            int valor = r.Next(20,50);
 
             lblResultado.Text = "Numero : " + valor;
         }
