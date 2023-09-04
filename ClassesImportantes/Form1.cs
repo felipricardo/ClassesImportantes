@@ -41,9 +41,14 @@ namespace ClassesImportantes
             Random r = new Random(DateTime.Now.Millisecond);
 
             int valor = r.Next(100);
-            double valor2 = r.NextDouble();
+            double valor2 = r.NextDouble() * 100;
 
-            lblResultado.Text = "Numero : " + valor;
+            lblResultado.Text = "Numero : " + valor2;
+        }
+
+        private void btnTimeSpan_Click(object sender, EventArgs e)
+        {
+            lblResultado.Text = TimeSpan.FromMinutes(90).ToString();
         }
     }
 }
