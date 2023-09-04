@@ -48,7 +48,7 @@ namespace ClassesImportantes
 
         private void btnTimeSpan_Click(object sender, EventArgs e)
         {
-            lblResultado.Text = TimeSpan.FromMinutes(90).ToString();
+            lblResultado.Text = TimeSpan.FromTicks(1000000000).ToString();
         }
     }
 }
