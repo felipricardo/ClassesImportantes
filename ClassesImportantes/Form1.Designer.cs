@@ -32,6 +32,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnAleatorio = new System.Windows.Forms.Button();
             this.btnTimeSpan = new System.Windows.Forms.Button();
+            this.btnEnvironment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
@@ -76,11 +77,23 @@
             this.btnTimeSpan.UseVisualStyleBackColor = true;
             this.btnTimeSpan.Click += new System.EventHandler(this.btnTimeSpan_Click);
             // 
+            // btnEnvironment
+            // 
+            this.btnEnvironment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnvironment.Location = new System.Drawing.Point(696, 444);
+            this.btnEnvironment.Name = "btnEnvironment";
+            this.btnEnvironment.Size = new System.Drawing.Size(222, 96);
+            this.btnEnvironment.TabIndex = 4;
+            this.btnEnvironment.Text = "Environment";
+            this.btnEnvironment.UseVisualStyleBackColor = true;
+            this.btnEnvironment.Click += new System.EventHandler(this.btnEnvironment_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 552);
+            this.Controls.Add(this.btnEnvironment);
             this.Controls.Add(this.btnTimeSpan);
             this.Controls.Add(this.btnAleatorio);
             this.Controls.Add(this.lblResultado);
@@ -98,6 +111,7 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnAleatorio;
         private System.Windows.Forms.Button btnTimeSpan;
+        private System.Windows.Forms.Button btnEnvironment;
     }
 }
 

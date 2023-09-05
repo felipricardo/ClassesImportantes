@@ -63,5 +63,14 @@ namespace ClassesImportantes
 
 
         }
+
+        private void btnEnvironment_Click(object sender, EventArgs e)
+        {
+            string meuDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            string dirAtual = Environment.CurrentDirectory;
+
+            lblResultado.Text = dirAtual;
+        }
     }
 }
