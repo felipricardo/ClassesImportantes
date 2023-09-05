@@ -68,6 +68,7 @@ namespace ClassesImportantes
         {
             string meuDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
+            Environment.CurrentDirectory = "C:\\";
             string dirAtual = Environment.CurrentDirectory;
 
             lblResultado.Text = dirAtual;
