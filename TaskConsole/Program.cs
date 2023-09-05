@@ -10,12 +10,15 @@ namespace TaskConsole
     {
         static void Main(string[] args)
         {
+            Task t1 = new Task(Tarefa);
+            t1.Start();
 
+            Task t2 = Task.Run(Tarefa);
         }
 
-        private void Tarefa()
+        static private void Tarefa()
         {
-            for (int i =0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Tarefa do task.");
             }
