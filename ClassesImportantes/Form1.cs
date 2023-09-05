@@ -57,7 +57,9 @@ namespace ClassesImportantes
 
             TimeSpan intervalo = fim - inicio; // para calcular o intervalo de tempo
 
-            lblResultado.Text = intervalo.ToString();
+            lblResultado.Text = intervalo.ToString(); // exibe o resultado
+
+
         }
     }
 }
