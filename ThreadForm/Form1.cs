@@ -43,8 +43,9 @@ namespace ThreadForm
         {
             while (true)
             {
-                //lblResultado.Text = DateTime.Now.Second.ToString(); // Atualiza o texto de um controle no formulário
-                DefinirValorPropriedade(lblResultado, "Text", DateTime.Now.Second.ToString()); // Chama o método para atualizar a propriedade de controle
+                lblResultado.Text = DateTime.Now.Second.ToString(); // Atualiza o texto de um controle no formulário
+                //DefinirValorPropriedade(lblResultado, "Text", DateTime.Now.Second.ToString()); // Chama o método para atualizar a propriedade de controle
+                lblResultado.Invoke(new Action(() => lblResultado.Text = DateTime.Now.Second.ToString()));
             }
 
             //DefinirValorPropriedade(lblResultado, "BackColor", Color.Orange); // Define a cor de fundo de um controle
