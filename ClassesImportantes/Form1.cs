@@ -51,8 +51,13 @@ namespace ClassesImportantes
             //lblResultado.Text = TimeSpan.FromTicks(1000000000).ToString();
             //lblResultado.Text = TimeSpan.TicksPerMinute.ToString(); // retorna quantos ticks tem no minuto
 
-            TimeSpan tempo = new TimeSpan(5, 30, 30); // 5 horas, 30 min e 30 seg
-            lblResultado.Text = tempo.ToString();
+            TimeSpan inicio = new TimeSpan(5, 30, 30); // 5 horas, 30 min e 30 seg
+
+            TimeSpan fim = new TimeSpan(18, 25, 0);
+
+            TimeSpan intervalo = fim - inicio; // para calcular o intervalo de tempo
+
+            lblResultado.Text = intervalo.ToString();
         }
     }
 }
