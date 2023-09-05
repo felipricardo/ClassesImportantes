@@ -58,6 +58,8 @@ namespace TaskConsole
                 })
             };
 
+            Console.WriteLine("Principal");
+
             Console.ReadKey();
         }
 
