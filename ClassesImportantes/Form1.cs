@@ -81,8 +81,10 @@ namespace ClassesImportantes
             //}
 
             string user = Environment.UserName;
+            string dominio = Environment.UserDomainName;
+            int cpu = Environment.ProcessorCount;
 
-            lblResultado.Text = user;
+            lblResultado.Text = cpu.ToString();
         }
     }
 }
