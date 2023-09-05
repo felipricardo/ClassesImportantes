@@ -72,6 +72,7 @@
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.lblResultado);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
