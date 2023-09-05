@@ -12,7 +12,9 @@ namespace ThreadConsole
         static void Main(string[] args)
         {
             Thread t = new Thread(new ThreadStart(Tarefa));
+            t.IsBackground = true;
             t.Start();
+            t.Join();
 
             for (int i = 0; i < 10; i++)
             {
