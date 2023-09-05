@@ -75,7 +75,7 @@ namespace ClassesImportantes
 
             string varAmb = Environment.GetEnvironmentVariable("Path");
 
-            lblResultado.Text = dirAtual;
+            lblResultado.Text = varAmb;
         }
     }
 }

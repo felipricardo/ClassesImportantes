@@ -51,7 +51,7 @@
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.Location = new System.Drawing.Point(12, 9);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(1061, 139);
+            this.lblResultado.Size = new System.Drawing.Size(1061, 431);
             this.lblResultado.TabIndex = 1;
             this.lblResultado.Text = "label1";
             // 
