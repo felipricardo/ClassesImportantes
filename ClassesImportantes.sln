@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesImportantes", "ClassesImportantes\ClassesImportantes.csproj", "{87019E05-108E-4D3F-B4D8-6D1A6DC3288D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread", "Thread\Thread.csproj", "{85DC2D6B-F6B7-4A98-899D-8CF3644235E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadConsole", "Thread\ThreadConsole.csproj", "{85DC2D6B-F6B7-4A98-899D-8CF3644235E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
