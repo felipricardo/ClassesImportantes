@@ -49,7 +49,10 @@ namespace ClassesImportantes
         private void btnTimeSpan_Click(object sender, EventArgs e)
         {
             //lblResultado.Text = TimeSpan.FromTicks(1000000000).ToString();
-            lblResultado.Text = TimeSpan.TicksPerMinute.ToString();
+            //lblResultado.Text = TimeSpan.TicksPerMinute.ToString(); // retorna quantos ticks tem no minuto
+
+            TimeSpan tempo = new TimeSpan(5, 30, 30); // 5 horas, 30 min e 30 seg
+            lblResultado.Text = tempo.ToString();
         }
     }
 }
