@@ -40,13 +40,13 @@ namespace ThreadForm
 
         private void Tarefa()
         {
-            //while (true)
-            //{
-            //    //lblResultado.Text = DateTime.Now.Second.ToString();
-            //    DefinirValorPropriedade(lblResultado, "Text", DateTime.Now.Second.ToString());
-            //}
+            while (true)
+            {
+                //lblResultado.Text = DateTime.Now.Second.ToString();
+                DefinirValorPropriedade(lblResultado, "Text", DateTime.Now.Second.ToString());
+            }
 
-            DefinirValorPropriedade(lblResultado, "BackColor", Color.Orange);
+            //DefinirValorPropriedade(lblResultado, "BackColor", Color.Orange);
         }
 
         private void DefinirValorPropriedade(Control controle, string propriedade, object valor)
