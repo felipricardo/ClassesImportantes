@@ -71,9 +71,14 @@ namespace TaskConsole
             //Console.WriteLine("Principal.");
             #endregion
 
-
+            Task<int> tarefa1 = Task.Factory.StartNew(() => 2);
 
             Console.ReadKey();
+        }
+
+        static int Dobro(int num)
+        {
+            return num * 2;
         }
 
         static private void Tarefa()
