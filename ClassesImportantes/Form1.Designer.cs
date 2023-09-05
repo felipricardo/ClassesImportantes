@@ -33,6 +33,7 @@
             this.btnAleatorio = new System.Windows.Forms.Button();
             this.btnTimeSpan = new System.Windows.Forms.Button();
             this.btnEnvironment = new System.Windows.Forms.Button();
+            this.btnApplication = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
@@ -88,11 +89,23 @@
             this.btnEnvironment.UseVisualStyleBackColor = true;
             this.btnEnvironment.Click += new System.EventHandler(this.btnEnvironment_Click);
             // 
+            // btnApplication
+            // 
+            this.btnApplication.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApplication.Location = new System.Drawing.Point(12, 545);
+            this.btnApplication.Name = "btnApplication";
+            this.btnApplication.Size = new System.Drawing.Size(222, 96);
+            this.btnApplication.TabIndex = 5;
+            this.btnApplication.Text = "Application";
+            this.btnApplication.UseVisualStyleBackColor = true;
+            this.btnApplication.Click += new System.EventHandler(this.btnApplication_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1085, 552);
+            this.ClientSize = new System.Drawing.Size(945, 733);
+            this.Controls.Add(this.btnApplication);
             this.Controls.Add(this.btnEnvironment);
             this.Controls.Add(this.btnTimeSpan);
             this.Controls.Add(this.btnAleatorio);
@@ -112,6 +125,7 @@
         private System.Windows.Forms.Button btnAleatorio;
         private System.Windows.Forms.Button btnTimeSpan;
         private System.Windows.Forms.Button btnEnvironment;
+        private System.Windows.Forms.Button btnApplication;
     }
 }
 
