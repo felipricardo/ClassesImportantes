@@ -95,6 +95,8 @@ namespace ClassesImportantes
 
             string pasta = Application.StartupPath;
 
+            //Application.Restart();
+
             lblResultado.Text = pasta;
         }
     }
