@@ -18,6 +18,8 @@ namespace TaskConsole
             Task.Run(Tarefa);
 
             Task.Factory.StartNew(Tarefa);
+
+            Task.Run(() => { });
         }
 
         static private void Tarefa()
