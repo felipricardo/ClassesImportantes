@@ -71,7 +71,7 @@ namespace TaskConsole
             //Console.WriteLine("Principal.");
             #endregion
 
-            Task<int> tarefa1 = Task.Factory.StartNew(() => 2);
+            Task<int> tarefa1 = Task.Factory.StartNew(() => 2*2);
 
             Console.ReadKey();
         }
