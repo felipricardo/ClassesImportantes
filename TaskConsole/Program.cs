@@ -23,9 +23,16 @@ namespace TaskConsole
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine("Tarefa anonima.");
+                    Console.WriteLine("Tarefa anônima.");
                 }
             });
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Principal.");
+            }
+
+            Console.ReadKey();
         }
 
         static private void Tarefa()
