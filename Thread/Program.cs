@@ -12,7 +12,7 @@ namespace ThreadConsole
         static void Main(string[] args)
         {
             Thread t = new Thread(new ThreadStart(Tarefa));
-            Tarefa();
+            t.Start();
 
             for (int i = 0; i < 10; i++)
             {
