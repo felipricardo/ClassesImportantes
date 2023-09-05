@@ -32,7 +32,10 @@ namespace ThreadForm
 
         private void btnContador_Click(object sender, EventArgs e)
         {
-            
+            if (!t.IsAlive)
+            {
+                t.Start();
+            }
         }
 
         private void Tarefa()
