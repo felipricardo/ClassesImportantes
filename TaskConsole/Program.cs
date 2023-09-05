@@ -40,6 +40,7 @@ namespace TaskConsole
             //}
             #endregion
 
+            #region Task Parte 2
             //Task[] tasks =
             //{
             //    Task.Factory.StartNew(() =>
@@ -60,12 +61,17 @@ namespace TaskConsole
 
             //Task.WaitAll(tasks);
 
-            Task t1 = Task.Run(() => { Console.WriteLine("Comando #1"); });
-            Task t2 = Task.Run(() => { Console.WriteLine("Comando #2"); });
-            Task t3 = Task.Run(() => { Console.WriteLine("Comando #3"); });
-            Task.WaitAll(t1, t2, t3);
+            //#####
+            //Task t1 = Task.Run(() => { Console.WriteLine("Comando #1"); });
+            //Task t2 = Task.Run(() => { Console.WriteLine("Comando #2"); });
+            //Task t3 = Task.Run(() => { Console.WriteLine("Comando #3"); });
 
-            Console.WriteLine("Principal.");
+            //Task.WaitAll(t1, t2, t3);
+
+            //Console.WriteLine("Principal.");
+            #endregion
+
+
 
             Console.ReadKey();
         }
