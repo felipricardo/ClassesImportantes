@@ -14,6 +14,8 @@ namespace TaskConsole
             t1.Start();
 
             Task t2 = Task.Run(Tarefa);
+
+            Task.Run(Tarefa);
         }
 
         static private void Tarefa()
