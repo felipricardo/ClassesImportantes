@@ -40,16 +40,18 @@ namespace TaskConsole
             //}
             #endregion
 
-            Task[] tasks = 
+            Task[] tasks =
             {
-                Task.Factory.StartNew(() => 
+                Task.Factory.StartNew(() =>
                 {
                     Console.WriteLine("Tarefa #1");
                 }),
+
                 Task.Factory.StartNew(() => 
                 {
                     Console.WriteLine("Tarefa #2");
                 }),
+
                 Task.Factory.StartNew(() => 
                 {
                     Console.WriteLine("Tarefa #3");
