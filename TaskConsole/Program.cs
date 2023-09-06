@@ -71,9 +71,8 @@ namespace TaskConsole
             //Console.WriteLine("Principal.");
             #endregion
 
-            Task<int> tarefa1 = Task.Factory.StartNew(() => Dobro(5));
-
-            Console.WriteLine(tarefa1.Result);
+            //Task<int> tarefa1 = Task.Factory.StartNew(() => Dobro(5)); // mostra como obter o retorno de uma tarefa
+            //Console.WriteLine(tarefa1.Result);
 
             Console.ReadKey();
         }
