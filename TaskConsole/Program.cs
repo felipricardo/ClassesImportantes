@@ -76,7 +76,7 @@ namespace TaskConsole
 
             Task<int> tarefa1 = Task.Factory.StartNew(() =>
             {
-                return new Random().Next();
+                return new Random().Next(10);
             });
 
             Console.ReadKey();
