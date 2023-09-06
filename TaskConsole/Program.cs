@@ -73,6 +73,8 @@ namespace TaskConsole
 
             Task<int> tarefa1 = Task.Factory.StartNew(() => Dobro(5));
 
+            Console.WriteLine(tarefa1.Result);
+
             Console.ReadKey();
         }
 
