@@ -79,6 +79,17 @@ namespace TaskConsole
                 return new Random().Next(10);
             });
 
+            Task<int> tarefa2 = tarefa1.ContinueWith((num) =>
+            {
+                return num.Result * 2;
+            });
+
+            Task<string> tarefa3 = tarefa2.ContinueWith((num) =>
+            {
+                return "Valor Final" + num.Result;
+            });
+
+            Console.WriteLine(tarefa3.Result);
             Console.ReadKey();
         }
 
