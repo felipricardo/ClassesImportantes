@@ -74,21 +74,25 @@ namespace TaskConsole
             //Task<int> tarefa1 = Task.Factory.StartNew(() => Dobro(5)); // mostra como obter o retorno de uma tarefa
             //Console.WriteLine(tarefa1.Result);
 
+            // Inicializa uma tarefa (Task) chamada tarefa1 que gera um número aleatório.
             Task<int> tarefa1 = Task.Factory.StartNew(() =>
             {
                 return new Random().Next(10);
             });
 
+            // Cria uma segunda tarefa (tarefa2) que continua a partir da primeira tarefa (tarefa1) e duplica o número resultante.
             Task<int> tarefa2 = tarefa1.ContinueWith((num) =>
             {
                 return num.Result * 2;
             });
 
+            // Cria uma terceira tarefa (tarefa3) que continua a partir da segunda tarefa (tarefa2) e cria uma string com o valor resultante.
             Task<string> tarefa3 = tarefa2.ContinueWith((num) =>
             {
-                return "Valor Final" + num.Result;
+                return "Valor Final " + num.Result;
             });
 
+            // Aguarda a conclusão da terceira tarefa e imprime o resultado na tela.
             Console.WriteLine(tarefa3.Result);
             Console.ReadKey();
         }
