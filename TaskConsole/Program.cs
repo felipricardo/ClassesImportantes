@@ -74,6 +74,11 @@ namespace TaskConsole
             //Task<int> tarefa1 = Task.Factory.StartNew(() => Dobro(5)); // mostra como obter o retorno de uma tarefa
             //Console.WriteLine(tarefa1.Result);
 
+            Task<int> tarefa1 = Task.Factory.StartNew(() =>
+            {
+                return new Random().Next();
+            });
+
             Console.ReadKey();
         }
 
